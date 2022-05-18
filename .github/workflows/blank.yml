@@ -17,13 +17,13 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build-dev:
-    runs-on: ubuntu-latest
+    runs-on: sharing_cm
     environment: dev
     steps:
       - name: Run a dev
         run: echo "key ${{ secrets.KEY }}"
   build-prod:
-    runs-on: ubuntu-latest
+    runs-on: sharing_cm
     environment: prod
     steps:
       - name: Run a prod
